@@ -1,0 +1,22 @@
+$body-bg: #bdc3c7; 
+
+
+
+@import 'bootstrap' ;
+
+
+
+ h1  {text-align: center;
+   
+}
+
+p  {text-align: center;
+   
+}
+
+#obama {
+	background-image: image-url("welfare_card.jpeg");
+	background-repeat: no-repeat;
+	background-position: center; height: 250px; width: auto;
+
+}

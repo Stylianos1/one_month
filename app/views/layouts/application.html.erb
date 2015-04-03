@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>OneMonth</title>
+  <title>first of the month</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-</head>
-<body>
-	<%= link_to "home" , root_path %>
-	<%= link_to "About" , about_path %>
-	<%= link_to "contact_us" , contact_us_path %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+</head>
+
+<body>
+
+<%= render 'layouts/header' %>
+	
+<div class="container">
+	<div class="row">
     <%= yield %>
+</div> 
+  <div id="obama">
+
+	</div>
+</div>
 
 </body>
 </html>
