@@ -1,5 +1,13 @@
 <div class="jumbotron">
-
+<% if user_signed_in? %>
+# WELCOME FUCKER
+<% else %>
+<p>
 <h1>get that dough</h1>
-<p>click here to <%= link_to "sign up", "#", class: "btn btn-info btn-lg"  %> </p>
+<p>click here to <%= link_to "sign up", new_user_registration_path, class: "btn btn-info btn-lg"  %> </p>
+<p>click here to <%= link_to "sign in", new_user_session_path, class: "btn btn-success btn-lg"  %> </p>
+
+<p>
+	<% end %>
+
 </div>
